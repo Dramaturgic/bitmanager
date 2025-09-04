@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eddbc4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    max-width: 450px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    animation: fadeInDown 0.5s ease;
+    margin-top: -250px;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.confirm-label {
+    margin-left: 10px;
+    color: #333;
+}
+
+.confirm-text {
+    font-weight: bold;
+    color: #333;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="submit"] {
+    background-color: #6b4fa0;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 40px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #351b64;
+}
